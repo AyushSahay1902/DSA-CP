@@ -13,7 +13,7 @@ int main(){
             digit_sum = digit_sum+last_digit;
             n= n/10;
         }    
-        cout << digit_sum << endl;
+        cout << "DigitSum:" << digit_sum << endl;
     }
 
    
