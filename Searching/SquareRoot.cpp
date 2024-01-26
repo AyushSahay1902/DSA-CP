@@ -5,10 +5,10 @@
 #include <iostream>
 using namespace std;
 
-int squareRoot(int n) {
+long long int squareRoot(int n) {
     int left = 0;
     int right = n;
-    int mid = left + (right - left) / 2;
+    long long int mid = left + (right - left) / 2;
     while (left <= right){
         if(mid * mid == n){
             return mid;
