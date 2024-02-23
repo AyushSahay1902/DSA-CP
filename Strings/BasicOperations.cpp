@@ -8,7 +8,7 @@ int main() {
     //indexOf(char c, int indexFrom) - find(char c, fromIndex)
     //lastIndexOf(char c, int fromIndex) - rfind()
     //charAt(int indexNumber) - str[20]
-    string str = "Ayush_Sahay is GeeksforGeeks is a computer science portal";
+    string str = "(Ayush_Sahay is GeeksforGeeks is a computer science portal)";
     int firstIndex = str.find('G');
     cout << "First Index of 'G':"<< firstIndex << endl;
     int lastIndex = str.rfind('p');
