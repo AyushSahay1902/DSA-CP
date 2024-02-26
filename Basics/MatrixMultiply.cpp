@@ -1,3 +1,5 @@
+//Write a program to find the strongly connected components in a digraph.
+
 #include <iostream>
 
 using namespace std;
