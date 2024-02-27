@@ -2,13 +2,18 @@
 #include<string>
 using namespace std;
 
-void isPalindrome(string str){
+bool isPalindrome(string str){
     int low = 0;
     int high = str.size() - 1;
 
     while(low < high){
-        if(str[low] != )
+        if(str[low] != str[high]){
+            return false;
+        }
+        low++;
+        high--;
     }
+    return true;
 }
 
 int main(){
