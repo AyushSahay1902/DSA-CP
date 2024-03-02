@@ -1,0 +1,16 @@
+->Set is STL container that used to store uique values.
+->Values are stored in ordered state.
+->No indexing in sets. Elementss are identified by there own value.
+->Once value inserted in a set, it cannot be modefied.
+->We can remove any element, burt we cannot modify it.
+->Advantages - unique value, ordered, dynamic size, no overflow error, faster insertion/deletion/search - O(logn)
+->Disadvantage - No indexing, uses more memory than array, not suitable for large data sets.
+->Declaration of Sets.
+#include<set>
+set<data_type> name;
+set<int> set1 = {1,2,3,4} //By default the values are stored in increasing order.
+set<int, greater<int>> set_name;
+-> insertion:-
+set1.insert(4);
+set1.insert(2);
+-> returns the pointer to the inserted value.
