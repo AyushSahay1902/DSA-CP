@@ -32,8 +32,12 @@ int main(){
     s.erase(start_itr, end_itr);
 
     //Member Function of a Set Container
-    //size(), maxSixe(), empty(), clear(), find(), 
-
+    //size(), maxSixe(), empty(), clear(), find(), count(), 
+    if(s.find(7) != s.end()){ //?
+        cout << "Value is present"<<endl;
+    }else{
+        cout<< "Value is not present!"<< endl;
+    }
 
     cout << "The size of the set id: " <<s.size() << endl;
     for(it = s.begin(); it != s.end(); it++){
