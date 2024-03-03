@@ -14,3 +14,10 @@ set<int, greater<int>> set_name;
 set1.insert(4);
 set1.insert(2);
 -> returns the pointer to the inserted value.
+#Types of Sets:-
+1. Unordered Set - Elements are store in some rando order.
+ Values cannot be modefied.
+ Average time complexity becomes O(1). By hashing
+
+2. Multi-Set - We can store duplicate values.
+It will be ordered and cannot be modefied.
