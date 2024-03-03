@@ -15,11 +15,31 @@ int main(){
     s.insert(9);
     s.insert(10);
 
-    cout << "The size of the set id: " <<s.size() << endl;
+    s.erase(5);
 
+    // Deleting the elements using iterator.
     set<int>::iterator it;
+    auto itr = s.begin();
+    advance(itr, 3);
+    s.erase(itr);
+    
+    auto start_itr = s.begin();
+    start_itr++;
+
+    auto end_itr = s.begin();
+    advance(end_itr, 3);
+
+    s.erase(start_itr, end_itr);
+
+    //Member Function of a Set Container
+    //size(), maxSixe(), empty(), clear(), find(), 
+
+
+    cout << "The size of the set id: " <<s.size() << endl;
     for(it = s.begin(); it != s.end(); it++){
         cout << *it << " ";
     }
     cout << endl;
+
+
 }
