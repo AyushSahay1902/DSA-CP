@@ -48,6 +48,16 @@ public:
             temp = temp->next;
         }
     }
+    void deleteLastNode(){
+        node *temp= head;
+        node *prev = NULL;
+        while(temp->next != NULL){
+            temp = temp->next;
+        }
+        tail = temp;
+        temp = temp->next;
+        delete temp;
+    }
 
     void displayList() {
         node *temp = head;
