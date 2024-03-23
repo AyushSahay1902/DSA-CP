@@ -67,7 +67,15 @@ vector<int> WavePrint(vector<vector<int>> arr, int row, int col) {
     }
     return ans;
 }
-
+int 90DegreeRotate(int[][] matrix, int row, int col){
+    int ans[][];
+    for(int i=0; i<row; i++){
+        for(int j=0 j<col; j++){
+            ans[j][col-1-j] = matrix[i][j];
+        }
+    }
+    //print the matrix
+}
 // static int RowSum(int arr[][4], int i){
 //     int sum = 0;
 //     for(int col =0; col<4; col++){
