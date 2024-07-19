@@ -1,0 +1,4 @@
+STL - Standard temprary library
+Maps - Key value pair
+insertion - O(1), Searching - O(1)
+
