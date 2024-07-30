@@ -1,33 +1,36 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-class Node{
+struct Node {
     int data;
-    Node* left;
-    Node* right;
-    Node(int data){
-        this -> data = data;
-        this->left = NULL;
-        this->right = NULL;
-    }
+    vector<Node*> child;
 }
 
-int height(struct Node* node){
-    //base case
-    if(node == NULL){
-        return 0;
-    }
-    int left = height(node -> left);
-    int right = height(node -> right);
-
-    int ans = max(left, right) + 1;
-    return ans;
+struct Node* createNode(int data){
+    Node* newNode = new Node();
+    newNode->data = data;
+    return newNode;
 }
+
+void addChild(Node* node, int data){
+    //first create a new Node
+    Node* newNode = createNode(data);
+    node->child.push_back(newNode);
+    return newNode;
+}
+
+void Print(Node* root){
+    
+}
+
 
 int main() {
-    int d;
-    cin >> d;
-    Node root = new Node(d);
+    //root pointer
+    Node* root;
 
-    
+    root = createNode(3);
+    addChild(root, 2);
+    addChild(root, 1);
+
+    return 0;
 }
