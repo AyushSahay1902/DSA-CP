@@ -104,71 +104,8 @@ int main() {
     bt.levelOrderTraversal();
 
     return 0;
-}
-// Linked List Implementation
-struct Node {
-    int data;
-    Node* left;
-    Node* right;
-    Node* next; // Pointer for linked list
-};
-class BinaryTree {
-    Node* root;
-    Node* head; // Head of the linked list
+}   
 
-public:
-    BinaryTree() { root = nullptr; head = nullptr; }
-
-    // Function to create a new node
-    Node* createNode(int data) {
-        Node* newNode = new Node();
-        newNode->data = data;
-        newNode->left = newNode->right = nullptr;
-        newNode->next = nullptr;
-        return newNode;
-    }
-
-    // Function to insert a node into the binary tree
-    void insert(int data) {
-        Node* newNode = createNode(data);
-
-        if (root == nullptr) {
-            root = newNode;
-            head = newNode;
-        } else {
-            Node* temp = head;
-            while (temp->next != nullptr) {
-                temp = temp->next;
-            }
-            temp->next = newNode;
-
-            // Insert newNode as left or right child of temp
-            if (temp->left == nullptr) {
-                temp->left = newNode;
-            } else {
-                temp->right = newNode;
-            }
-        }
-    }
-
-    // Function to perform in-order traversal
-    void inOrderTraversal(Node* node) {
-        if (node == nullptr) return;
-
-        inOrderTraversal(node->left);
-        cout << node->data << " ";
-        inOrderTraversal(node->right);
-    }
-
-    // Function to perform level order traversal
-    void levelOrderTraversal() {
-        Node* temp = head;
-        while (temp != nullptr) {
-            cout << temp->data << " ";
-            temp = temp->next;
-        }
-    }
-};
 //Stack implementation
 class BinaryTree {
     Node* root;
